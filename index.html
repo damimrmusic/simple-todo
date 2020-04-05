@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <body onload="startTime()">
+    <title>ToDo List</title>
+</head>
+<body>
+        <div class="timeAndDate">
+    <p class="date" id="date"></p>
+    <p class="time" id="time"></p>
+    </div>
+
+    <h1 class="coolTitle animated swing">ToDo List</h1>
+    
+    <div class="inputbtn">
+    <input class="input" id="userinput" type="text" placeholder="enter items">
+    <button class="enter" id="enter">Enter</button>
+    </div>
+    <p class="first" id="first">Things to do today:</p>
+    <!-- <p class="second">List Below:</p> -->
+    <div class="listContainer">
+        <ul id="myList">
+   </div>    
+    </ul>
+   
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

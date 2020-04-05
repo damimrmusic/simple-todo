@@ -1,0 +1,160 @@
+html * {
+   font-family: 'Roboto Mono', monospace,'Oswald', Helvetica, sans-serif !important;
+}
+
+
+.timeAndDate {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.date {
+    color: rgb(4, 141, 196);
+    margin-right: 20px;
+}
+
+.time {
+  color: rgb(4, 141, 196);
+}
+
+.coolTitle {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace,'Oswald', Helvetica, sans-serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: rgb(4, 141, 196);
+    margin-top: 3S0px;
+            
+  }
+
+  p {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace,'Oswald', Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(4, 141, 196);
+     }
+
+  .first {
+      text-align: center;
+  }
+  
+  .done {
+    text-decoration: line-through;
+    color: rgb(4, 141, 196);
+        
+  }
+
+  /*.done::before {
+  content: '2121';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  }*/
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  counter-reset: section;
+
+  }
+
+
+
+.singleList::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+
+.singleList:hover {
+  transform: scale(1.1);
+}
+  
+
+ul li {
+    /*display: flex;*/
+    /*margin-left: 42%;*/
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace,'Oswald', Helvetica, sans-serif;
+    color: rgb(4, 196, 154);
+    /*justify-content: center;*/
+    list-style: none;
+    
+            
+  }
+
+  ul:hover {
+      cursor: pointer;
+      
+  }
+
+  .inputbtn {
+   display: flex;
+   /*align-items: center;*/
+   justify-content: center;
+   border: 0;
+     
+  }
+
+.input {
+ outline: none;
+  border-radius: 15px 15px 15px 15px;
+  border: 3px solid rgb(4, 141, 196);
+  padding: 15px; 
+  width: 220px;
+  height: 10px;
+  margin-right: 2px;
+}
+
+ 
+
+
+.enter {
+
+    outline: none;
+    border-radius: 15px 15px 15px 15px; 
+    width: 90px;
+    background-color: white;
+    border: 3px solid rgb(4, 141, 196);
+}
+
+.enter:hover{
+    cursor: pointer;
+    background-color: rgb(4, 141, 196);
+    color: white;
+}
+
+.remove {
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: width 2s;
+    font-size: 30px;
+}
+
+.remove:hover {
+  text-shadow: 2px 2px 5px black;
+  width: 45px;
+  background-color: red;
+  color: white;
+
+}
+
+
+
+
+
